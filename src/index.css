@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif-luxury: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-brand: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  
+  --color-alabaster-50: #FCFAF7;
+  --color-alabaster-100: #FAF7F2;
+  --color-alabaster-200: #F5EFEB;
+  --color-alabaster-300: #EFE9DF;
+  --color-alabaster-400: #E5DCCE;
+  
+  --color-sand-200: #F2E8DC;
+  --color-sand-300: #E4D5C3;
+  --color-sand-400: #C5A880;
+  --color-sand-500: #B38F5F;
+
+  --color-noir-900: #141312;
+  --color-noir-800: #1A1918;
+  --color-noir-700: #2C2825;
+  --color-noir-600: #423E3A;
+  --color-noir-500: #656059;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F2;
+  color: #1A1918;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Luxury Brand Typography */
+.font-brand {
+  font-family: "Cinzel", "Cormorant Garamond", Georgia, serif;
+  letter-spacing: 0.16em;
+}
+
+.font-editorial {
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+}
+
+/* Warm Luxury Shadow & Cards (Lumée / The Reset World style) */
+.luxury-card {
+  background: #FFFFFF;
+  border: 1px solid #EFE9DF;
+  box-shadow: 0 10px 30px -5px rgba(45, 38, 30, 0.04), 0 2px 6px -1px rgba(45, 38, 30, 0.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-card:hover {
+  border-color: #C5A880;
+  box-shadow: 0 16px 36px -8px rgba(45, 38, 30, 0.08), 0 4px 10px -2px rgba(45, 38, 30, 0.03);
+}
+
+/* Warm Hero Banner */
+.luxury-banner {
+  background: linear-gradient(135deg, #F7F1E8 0%, #EFE5D7 50%, #FAF6EE 100%);
+  border: 1px solid #E5DCCE;
+  box-shadow: 0 12px 32px -8px rgba(70, 56, 38, 0.07);
+}
+
+/* Minimalist Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DDD5C7;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A880;
+}
